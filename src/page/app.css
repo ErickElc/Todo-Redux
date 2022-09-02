@@ -1,0 +1,10 @@
+.App{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+    height: 50vh;
+}
+body{
+    height: 100vh;
+}
