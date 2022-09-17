@@ -22,7 +22,7 @@ export default () =>{
         setInput({input: ''});
     }   
     return(
-        <ContainerForm className="ContainerForm">
+        <ContainerForm className="ContainerForm" onSubmit={AddItemEvent}>
                 <TextField 
                     className="InputForm"
                     label="Adicione um elemento a lista" 
@@ -32,7 +32,7 @@ export default () =>{
                     id="outlined-basic"  
                     variant="outlined"
                 />
-                <Button variant="contained" onClick={AddItemEvent}  style={{width: '50px', height: '56px'}}>ADD</Button>
+                <Button variant="contained" style={{width: '50px', height: '56px'}}>ADD</Button>
         </ContainerForm>
     )
 }
