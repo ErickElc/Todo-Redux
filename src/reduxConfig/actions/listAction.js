@@ -1,7 +1,7 @@
-
 let id = 0;
 
 export function addItem(item){
+
     id += 1;
 
     const it = {id: id, content: item,  done: false}

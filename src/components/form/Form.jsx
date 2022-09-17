@@ -1,6 +1,9 @@
-import { useState } from "react";
+import { addItem } from "../../reduxConfig/actions/listAction";
+import { ContainerForm } from "../../styles/compontents";
+import { Button, TextField } from "@mui/material";
 import { useDispatch } from "react-redux";
-import { addItem } from "../../actions/listAction";
+import { useState } from "react";
+import './form.scss';
 
 export default () =>{
     const [input, setInput] = useState({input: ''});
@@ -19,13 +22,17 @@ export default () =>{
         setInput({input: ''});
     }   
     return(
-        <form action="">
-            <input 
-                type="text" 
-                onChange={HandleChange} 
-                value={input.input}
-            />
-            <button onClick={AddItemEvent}>ADD</button>
-      </form>
+        <ContainerForm className="ContainerForm">
+                <TextField 
+                    className="InputForm"
+                    label="Adicione um elemento a lista" 
+                    style={{marginRight: '1px', color: "black"}}
+                    onChange={HandleChange} 
+                    value={input.input}
+                    id="outlined-basic"  
+                    variant="outlined"
+                />
+                <Button variant="contained" onClick={AddItemEvent}  style={{width: '50px', height: '56px'}}>ADD</Button>
+        </ContainerForm>
     )
 }

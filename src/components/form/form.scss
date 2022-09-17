@@ -1,0 +1,16 @@
+
+.ContainerForm{
+    .InputForm{
+        width: 300px;
+    }
+}
+@media (max-width: 520px) {
+    .ContainerForm{
+        .InputForm{
+            width: 180px;
+        }
+    }
+    .listContainer{
+        width: 220px;
+    }
+}
