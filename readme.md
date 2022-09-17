@@ -8,7 +8,7 @@
 
 Lista de tarefas simples.
 
-[Para testar](https://todo-redux-indol.vercel.app/)
+[Para testar](https://erick-nascimento-todo-redux.vercel.app)
 
 ### 🛠 Tecnologias
 

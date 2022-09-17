@@ -11,7 +11,6 @@ export default () =>{
     function HandleChange(e){
         e.preventDefault()
         setInput(prev => ({...prev, input: e.target.value}));
-    
     }
     function AddItemEvent(e){
         e.preventDefault()
