@@ -32,7 +32,7 @@ export default () =>{
                     id="outlined-basic"  
                     variant="outlined"
                 />
-                <Button variant="contained" style={{width: '50px', height: '56px'}}>ADD</Button>
+                <Button variant="contained" style={{width: '50px', height: '56px'}} type='submit'>ADD</Button>
         </ContainerForm>
     )
 }
